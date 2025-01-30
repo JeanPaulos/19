@@ -5,13 +5,13 @@ error_reporting(E_ALL);
 ini_set('max_execution_time', 300); // Max 5 minuten uitvoeren
 
 // API-sleutel voor ipinfo.io (vervang met jouw sleutel)
-define("API_KEY", "8c6bbca27806cb");
+define("API_KEY", "xxx");
 
 // Databaseverbinding instellen
 $host = "localhost"; // Je MySQL host (meestal localhost)
-$dbname = "u29676p38096_ipadressen1"; // Je database naam
-$username = "u29676p38096_ipjp"; // Je MySQL gebruikersnaam
-$password = "_s1JsobO%Jf/)MQK3Rgl++]Y"; // Je MySQL wachtwoord
+$dbname = "xxx"; // Je database naam
+$username = "xxx"; // Je MySQL gebruikersnaam
+$password = "xxx"; // Je MySQL wachtwoord
 
 // Maak verbinding met de database
 try {
@@ -48,7 +48,7 @@ function get_ip_location($ip) {
 
     if (isset($data["city"])) {
         if ($data["city"] === "Bemmel") {
-            return "<span style='color: green;'>$ip komt uit Bemmel! ✅</span>";
+            return "<span style='color: green;'>$ip komt uit xxx! ✅</span>";
         } else {
             return "$ip komt uit " . ($data["city"] ?? "onbekend") . ", " . ($data["region"] ?? "onbekend");
         }
